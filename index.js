@@ -27,28 +27,28 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_8 = function() {
+(lib.CachedBmp_12 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_7 = function() {
+(lib.CachedBmp_11 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_6 = function() {
+(lib.CachedBmp_10 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_5 = function() {
+(lib.CachedBmp_9 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
@@ -90,10 +90,10 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_8();
+	this.instance = new lib.CachedBmp_12();
 	this.instance.setTransform(0.25,-13.3,0.5,0.5);
 
-	this.instance_1 = new lib.CachedBmp_7();
+	this.instance_1 = new lib.CachedBmp_11();
 	this.instance_1.setTransform(-50,-63.8,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
@@ -115,13 +115,13 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_6();
+	this.instance = new lib.CachedBmp_10();
 	this.instance.setTransform(-23.9,21.15,0.5,0.5);
 
 	this.instance_1 = new lib.Bitmap1();
 	this.instance_1.setTransform(8,-20.75,0.041,0.041);
 
-	this.instance_2 = new lib.CachedBmp_5();
+	this.instance_2 = new lib.CachedBmp_9();
 	this.instance_2.setTransform(-50,-54.2,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
@@ -196,7 +196,7 @@ p.nominalBounds = new cjs.Rectangle(-60,-65.2,135,143);
 
 
 // stage content:
-(lib.testWebsite1 = function(mode,startPosition,loop,reversed) {
+(lib.main = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -217,15 +217,7 @@ if (reversed == null) { reversed = false; }
 		if(this.totalFrames == 1) {
 			this.isSingleFrame = true;
 		}
-		/* Click to Go to Web Page
-		Clicking on the specified symbol instance loads the URL in a new browser window.
-		
-		Instructions:
-		1. Replace http://www.adobe.com with the desired URL address.
-		   Keep the quotation marks ("").
-		*/
-		
-		this.linkedInBtn2.addEventListener("click", openWebPage.bind(this, "https://linkedin.com/in/andrewrottier/"));
+		this.linkedInBtn.addEventListener("click", openWebPage.bind(this, "https://linkedin.com/in/andrewrottier/"));
 		this.githubBtn.addEventListener("click", openWebPage.bind(this, "https://github.com/andrewrot"));
 		
 		function openWebPage(url) {
@@ -236,34 +228,31 @@ if (reversed == null) { reversed = false; }
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
-	// Layer_2
+	// Layer_1
 	this.githubBtn = new lib.githubBtn();
 	this.githubBtn.name = "githubBtn";
-	this.githubBtn.setTransform(384,108.75);
+	this.githubBtn.setTransform(968.9,722.15,0.4458,0.4458,0,0,0,0,0.1);
 	new cjs.ButtonHelper(this.githubBtn, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get(this.githubBtn).wait(1));
+	this.linkedInBtn = new lib.Symbol1();
+	this.linkedInBtn.name = "linkedInBtn";
+	this.linkedInBtn.setTransform(902.85,720.5,0.4458,0.4458,0,0,0,0.1,0.1);
+	new cjs.ButtonHelper(this.linkedInBtn, 0, 1, 2);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.linkedInBtn},{t:this.githubBtn}]}).wait(1));
 	this.githubBtn.addEventListener("tick", AdobeAn.handleFilterCache);
-
-	// Layer_1
-	this.linkedInBtn2 = new lib.Symbol1();
-	this.linkedInBtn2.name = "linkedInBtn2";
-	this.linkedInBtn2.setTransform(146,105.05);
-	new cjs.ButtonHelper(this.linkedInBtn2, 0, 1, 2);
-
-	this.timeline.addTween(cjs.Tween.get(this.linkedInBtn2).wait(1));
-	this.linkedInBtn2.addEventListener("tick", AdobeAn.handleFilterCache);
+	this.linkedInBtn.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(339.8,223.6,119.19999999999999,-6);
+p.nominalBounds = new cjs.Rectangle(1361.4,1050.9,-346.4000000000001,-261.0000000000001);
 // library properties:
 lib.properties = {
-	id: 'D6AC125815E24970BF2D7F926711E203',
-	width: 550,
-	height: 400,
-	fps: 24,
+	id: 'F596DBC3A1364F65B58219262A39DE8C',
+	width: 1024,
+	height: 768,
+	fps: 30,
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
@@ -305,7 +294,7 @@ an.bootstrapCallback=function(fnCallback) {
 };
 
 an.compositions = an.compositions || {};
-an.compositions['D6AC125815E24970BF2D7F926711E203'] = {
+an.compositions['F596DBC3A1364F65B58219262A39DE8C'] = {
 	getStage: function() { return exportRoot.stage; },
 	getLibrary: function() { return lib; },
 	getSpriteSheet: function() { return ss; },
