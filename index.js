@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"testWebsite1_atlas_1", frames: [[404,1026,93,154],[0,1026,200,200],[499,1026,142,66],[202,1026,200,200],[0,0,1024,1024]]}
+		{name:"index_atlas_1", frames: [[404,1026,93,154],[0,1026,200,200],[499,1026,142,66],[202,1026,200,200],[0,0,1024,1024]]}
 ];
 
 
@@ -28,35 +28,35 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_8 = function() {
-	this.initialize(ss["testWebsite1_atlas_1"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_7 = function() {
-	this.initialize(ss["testWebsite1_atlas_1"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_6 = function() {
-	this.initialize(ss["testWebsite1_atlas_1"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_5 = function() {
-	this.initialize(ss["testWebsite1_atlas_1"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Bitmap1 = function() {
-	this.initialize(ss["testWebsite1_atlas_1"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
@@ -267,7 +267,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/testWebsite1_atlas_1.png", id:"testWebsite1_atlas_1"}
+		{src:"images/index_atlas_1.png", id:"index_atlas_1"}
 	],
 	preloads: []
 };
